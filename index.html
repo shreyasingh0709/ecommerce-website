@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Top Navbar -->
+    <div class="topbar">
+        <div class="logo">
+            <a href="#"><img src="logo.png" alt="Logo"></a>
+        </div>
+        <div class="offer-message"><b>“Buy Products Worth ₹1000 & Get Flat 25% OFF on Your Next Purchase!”</b></div>
+         <div class="icons">
+            <a href="/3rd year project/login.html"><i class="fa-regular fa-user"></i></a>
+        </div>
+    </div>
+
+    <!-- Main Navbar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#AboutUs">About Us</a></li>
+            <li><a href="#products">Product</a></li>
+            <li><a href="#blog">Blogs</a></li>
+            <li><a href="#review-section">Review</a></li>
+            <li><a href="#contact-section">Contact</a></li>
+        </ul>
+        <a href="/3rd year project/consultation.html" class="consultation-btn">Consultation</a>
+    </nav>
+
+    <!-- Swipe Image Section -->
+    <!--<div id="Home">
+    <div class="swipe-image">
+        <p>Swipe Image [Insert Image Here]</p>
+        <img src="Screenshot 2025-10-06 at 7.33.51 PM.png" alt="Swipe Image">
+    </div>
+    </div>-->
+    <div class="slider">
+    <div class="slides">
+      <img src="home1.png" alt="M Herbs Hair Oil" class="active">
+      <img src="home2.png" alt="M Herbs Face Serum">
+      <img src="home3.png" alt="M Herbs Face Serum">
+    </div>
+    <div class="caption" id="caption">M Herbs – Natural Healing</div>
+  </div>
+
+  <script>
+    // JavaScript to change images automatically
+    const images = document.querySelectorAll('.slides img');
+    const caption = document.getElementById('caption');
+    const captions = [
+      "M Herbs – Pure Herbal Hair Oil",
+      "M Herbs – Radiant Face Serum",
+      "M Herbs – Gentle Herbal Shampoo"
+    ];
+
+    let index = 0;
+
+    function changeImage() {
+      images[index].classList.remove('active');
+      index = (index + 1) % images.length;
+      images[index].classList.add('active');
+      caption.textContent = captions[index];
+    }
+
+    setInterval(changeImage, 3000); // Change every 3 seconds
+  </script>
+
+
+    <!--**********************************ABOUT US*********************************-->
+    <section id="AboutUs">
+   
+    <div id="aboutUs">
+    <header>
+        <h1>WELCOME TO M HERBS</h1>
+    </header>
+
+    <div class="about-text">
+        <p>
+            M Herbs is a natural wellness brand dedicated to providing pure, herbal, and chemical-free products. We blend ancient Ayurvedic wisdom with modern science to promote healthy skin and hair. Our mission is to bring nature’s healing power to everyday self-care.
+        </p>
+    </div>
+
+    <div class="info-section">
+        <div class="info-box">
+            <div class="img-box">
+                <img src="aboutusimage1.png" alt="Herb Image 1">
+            </div>
+            <div class="text-box">
+                <p>Founded in 2022, Holy Ayurveda is a quality-driven organization rooted in the timeless values of traditional wisdom. Guided by the principles of holistic science, we are dedicated to preserving and promoting Ayurveda as one of the greatest treasures of the medicinal world. We believe that age-old Ayurvedic treatments, when embraced with sincerity, continue to offer profound healing and well-being for modern life.</p>
+            </div>
+        </div>
+        <div class="info-box">
+            <div class="img-box">
+                <img src="aboutusimage2.png" alt="Herb Image 2">
+
+            </div>
+            <div class="text-box">
+                <p>Ayurveda, the “Knowledge of Life,” is one of the world’s oldest healing systems that, for over six thousand years, has preserved the secrets of flawless skin and timeless beauty by teaching that true radiance comes when body, breath, mind, and spirit exist in perfect harmony.</p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!--************************************PRODUCTS********************************-->
+<section id="products">
+  <div class="product-heading">
+  <h2>Our Ayurvedic Products</h2>
+  </div>
+
+  <!-- Product 1 -->
+  <div class="product-container">
+    <div class="product-card">
+      <div class="product-img">
+        <img src="antishampoo.png" alt="Ayurvedic Tea">
+      </div>
+      <h3>HAIR CARE</h3>
+      <a href="/3rd year project/product.html#hair-shampoo" class="btn">Shop Now</a>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product-card">
+      <div class="product-img">
+        <img src="antiageserum.png" alt="Herbal Oil">
+      </div>
+      <h3>SKIN CARE</h3>
+      <a href="/3rd year project/product.html#face-serum" class="btn">Shop Now</a>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product-card">
+      <div class="product-img">
+        <img src="antioil.png" alt="Organic Capsules">
+      </div>
+      <h3>ANTI GREY-HAIR</h3>
+      <a href="/3rd year project/product.html#anti-grey-hair" class="btn">Shop Now</a>
+    </div>
+
+  </div>
+</section>
+
+<!--****************************BLOG**************************************-->
+<section id="blog">
+    <div>
+      <div class="heading">M Herbs Blogs</div>
+    </div>
+    
+  <!-- Section 1 -->
+    <div id="blog">
+      <div class="content-section">
+        <div class="text-block">
+          <h2 class="number">01</h2>
+          <p class="meta">📅 2024 | 👤 By Dr.Aa</p>
+          <h3>“Still Wondering What to Eat for Hair?”</h3>
+          <p>Healthy, shiny hair begins with what you put on your plate. Nutrient-rich foods like protein (eggs, lentils, fish), iron (spinach, beetroot, lean meats), omega-3 fatty acids (nuts, seeds, salmon), vitamins (A, C, D, E), zinc, and biotin play a vital role in strengthening hair roots and reducing hair fall. Hydration is equally important, as water supports scalp health and hair growth. A balanced diet not only prevents hair thinning and breakage but also enhances natural shine, making food the best and most sustainable solution for beautiful hair.</p>
+        </div>
+        <div class="image-block">
+          <img src="Screenshot 2025-10-06 at 7.33.51 PM.png" alt="Leaves decoration">
+        </div>
+      </div>
+      
+      <div class="content-section reverse">
+        <div class="text-block">
+          <h2 class="number">02</h2>
+          <p class="meta">📅 2024 | 👤 Dr.Ba</p>
+          <h3>“Dandruff and Ayurveda”</h3>
+          <p> Dandruff, often caused by dryness, excess oil, or fungal imbalance, is not just a cosmetic concern but a reflection of internal imbalance. Ayurveda views dandruff as a result of aggravated Vata (dryness) and Kapha (excess oiliness) doshas. Natural Ayurvedic remedies like neem, amla, fenugreek, aloe vera, and medicated oils (such as bhringraj or coconut oil infused with herbs) help purify the scalp, restore balance, and prevent flaking. Along with external treatments, Ayurveda emphasizes a wholesome diet, stress management, and proper hair care rituals, addressing dandruff from the root cause rather than just the symptoms.</p>
+        </div>
+        <div class="image-block">
+          <img src="Screenshot 2025-10-06 at 7.39.05 PM.png" alt="Lotus decoration">
+        </div>
+      </div>
+      
+      <div class="content-section">
+        <div class="text-block">
+          <h2 class="number">03</h2>
+          <p class="meta">📅 2025 | 👤 Dr.C</p>
+          <h3>“Hair fall in the 15 to 20 age group”</h3>
+          <p>Hair fall among teenagers and young adults (15–20 years) is increasingly common and often linked to hormonal changes, nutritional deficiencies, stress, and unhealthy lifestyle habits. At this age, puberty-related hormonal fluctuations, scalp issues like dandruff, or conditions such as PCOS and thyroid imbalance can also contribute to excessive shedding. Frequent use of heat styling, chemical treatments, or tight hairstyles further weakens hair roots. Ayurveda and modern science both emphasize that the solution lies in correcting the root cause—through a balanced diet rich in proteins, iron, zinc, and vitamins, stress management, proper sleep, and natural hair care practices. With early awareness and the right lifestyle choices, most cases of teenage hair fall can be prevented or reversed.</p>
+        </div>
+        <div class="image-block">
+          <img src="Screenshot 2025-10-06 at 7.34.20 PM.png" alt="Leaves decoration">
+        </div>
+      </div>
+      
+      <div class="content-section reverse">
+        <div class="text-block">
+          <h2 class="number">04</h2>
+          <p class="meta">📅 2025 | 👤 Dr.Da</p>
+          <h3>“Ayurvedic Hair Care: Nurturing Vata, Pitta, and Kapha for Healthy, Radiant Hair”
+</h3>
+          <p>Ayurveda classifies hair into three types—Vata, Pitta, and Kapha—each requiring unique care. Vata hair is dry, thin, and brittle, needing regular nourishment with oils like coconut or sesame and hydrating masks of honey and yogurt. Pitta hair, fine and silky, is prone to graying and hair loss, best cared for with cooling herbs like Aloe Vera and Brahmi and a diet rich in cooling foods. Kapha hair is thick and oily, benefitting from natural astringents like lemon juice or apple cider vinegar to control excess oil. Understanding your hair type helps you choose the right natural remedies. By following Ayurvedic practices, you can balance your hair’s nature, promote growth, and maintain healthy, lustrous locks naturally.
+</p>
+        </div>
+        <div class="image-block">
+          <img src="Screenshot 2025-10-06 at 7.39.39 PM.png" alt="Lotus decoration">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--***********************************REVIEW********************************-->
+<section id="review-section">
+  <div class="review-heading">
+    <h2>Real people, Real stories</h2>
+  </div>
+    <div class="review-container">
+        <button class="arrow left" id="leftBtn">&#10094;</button>
+
+        <div class="review-slider" id="slider">
+            <div class="review-card">
+                <img src="hairoil.png" alt="review1">
+                <h3>Sweta</h3>
+                <p>Amazing quality — my hair feels softer and healthier after just a week!</p>
+            </div>
+            <div class="review-card">
+                <img src="hairmask.png" alt="review2">
+                <h3>Ramanuj</h3>
+                <p>Loved the natural ingredients; the scent is refreshing and calming.</p>
+            </div>
+            <div class="review-card">
+                <img src="herbalshampoo.png" alt="review3">
+                <h3>Komal</h3>
+                <p>Helped reduce my dandruff naturally without harsh chemicals.</p>
+            </div>
+            <div class="review-card">
+                <img src="hairserum.png" alt="review4">
+                <h3>Suman</h3>
+                <p>A bit pricey, but totally worth it for the results and purity.</p>
+            </div>
+            <div class="review-card">
+                <img src="antiageserum.png" alt="review5">
+                <h3>Nandini</h3>
+                <p>My scalp feels nourished, and hair fall has visibly reduced.</p>
+            </div>
+            <div class="review-card">
+                <img src="antiageserum.png" alt="review6">
+                <h3>Chinmay</h3>
+                <p>Beautiful packaging and genuinely herbal — feels authentic.</p>
+            </div>
+            <div class="review-card">
+                <img src="antioil.png" alt="review7">
+                <h3>Suraj</h3>
+                <p>Best Ayurvedic product I’ve tried; leaves my hair shiny and strong.</p>
+            </div>
+        </div>
+
+        <button class="arrow right" id="rightBtn">&#10095;</button>
+    </div>
+</section>
+
+<script>
+    const slider = document.getElementById('slider');
+    const leftBtn = document.getElementById('leftBtn');
+    const rightBtn = document.getElementById('rightBtn');
+
+    const cardWidth = 250; // each card width + margin (must match CSS)
+    const scrollAmount = cardWidth * 3; // move 3 cards at once
+
+    leftBtn.addEventListener('click', () => {
+        slider.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+    });
+
+    rightBtn.addEventListener('click', () => {
+        slider.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    });
+</script>
+
+
+<!--*************************CONTACT US***************************-->
+
+<footer id="contact-section">
+  <div class="footer-panel1">
+    Contact Us
+  </div>
+  
+  <div class="footer-panel2">
+    <ul>
+      <p>Quick Links</p>
+      <a href="#Home">Home</a>
+      <a href="#AboutUs">About Us</a>
+      <a href="#products">Product</a>
+      <a href="#blog">Blogs</a>
+      <a href="#review-section">Review</a>
+      <a href="#contact-section">Contact</a>
+    </ul>
+    <ul>
+      <p>Our Services</p>
+      <a>Hair Treatments</a>
+      <a>Ayurvedic Therapy</a>
+      <a>Skin Treatments</a>
+    </ul>
+
+    <ul>
+      <p>Contact Us</p>
+      <a><i class="fas fa-phone"></i> +91 8591032944</a>
+      <a><i class="fas fa-phone"></i> +91 9867882290</a>
+      <a><i class="fas fa-envelope"></i> support@mherbs.com</a>
+      <a><i class="fas fa-envelope"></i> info@mherbs.com</a>
+      <a><i class="fas fa-map-marker-alt"></i> Mumbai, Maharashtra, India</a>
+    </ul>
+
+    <ul>
+      <p>Follow Us</p>
+      <a href="#"><i class="fab fa-facebook"></i> facebook</a>
+      <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="#"><i class="fab fa-pinterest"></i> Pinterest</a>
+    </ul>
+  </div>
+  
+  <div class="footer-panel4">
+    <div class="page">
+      <a>Condition of Use</a>
+      <a>Privacy Notice</a>
+      <a>Your Ads Privacy Choices</a>
+  </div>
+  
+  <div class="copyright">
+     © All Rights by XYZ
+    </div>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,72 @@
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background: linear-gradient(135deg, #eaded0, #95714f);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  margin: 0;
+}
+
+.thankyou-box {
+  background: #eaded0;
+  padding: 50px 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  max-width: 500px;
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.checkmark {
+  font-size: 60px;
+  color: #2e7d32;
+  margin-bottom: 20px;
+  animation: pop 0.8s ease;
+}
+
+@keyframes pop {
+  0% { transform: scale(0.5); opacity: 0; }
+  70% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(1); }
+}
+
+h1 {
+  color: #2e4a2e;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+p {
+  color: #444;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  background-color: #3b5d3b;
+  color: white;
+  text-decoration: none;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #2e4a2e;
+  transform: scale(1.05);
+}
+
+.footer {
+  margin-top: 20px;
+  font-size: 13px;
+  color: #666;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Consultation - M Herbs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ✅ Link external CSS -->
+  <link rel="stylesheet" href="consultation.css">
+</head>
+<body>
+
+  <!-- 🌿 Div 1: Heading with Back Button -->
+  <div class="heading-container">
+    <a href="index.html" class="back-btn">← Back</a>
+    <h1>Our Expert Consultants</h1>
+  </div>
+
+  <!-- 🌿 Div 2: Paragraph -->
+  <div class="paragraph-container">
+    <p>
+      Welcome to <strong>M Herbs</strong> Consultation Section!  
+      Our team of experienced herbal doctors is dedicated to providing you with personalized care 
+      for your hair, skin, and overall wellness. You can message our consultants, 
+      book online or offline appointments, and receive your appointment time within 24 hours.
+    </p>
+  </div>
+
+  <!-- 🌿 Div 3: Doctor Profiles (3 divs in one line) -->
+  <div class="doctors-container">
+    <div class="doctor-card">
+      
+      <h3>Dr. A</h3>
+      <p>Ayurvedic hair and scalp specialist with 10+ years of experience in herbal therapies.</p>
+    </div>
+
+    <div class="doctor-card">
+      
+      <h3>Dr.B</h3>
+      <p>Expert in herbal skin care, helping patients restore natural beauty through organic remedies.</p>
+    </div>
+
+    <div class="doctor-card">
+      
+      <h3>Dr.C</h3>
+      <p>Renowned herbal consultant for hair loss, dandruff, and scalp detox treatments.</p>
+    </div>
+  </div>
+
+  <!-- 🌿 Div 4: Booking Card (Existing Code) -->
+  <div class="booking-card">
+    <h2>Book a Hair Treatment</h2>
+    <form id="appointmentForm">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" placeholder="e.g. Sweta Singh" required>
+
+      <label for="date">Preferred Date</label>
+      <input type="date" id="date" required>
+
+      <label for="treatment">Select Treatment</label>
+      <select id="treatment" required>
+        <option value="">Choose one...</option>
+        <option value="Hair Loss Treatment">Hair Loss Treatment</option>
+        <option value="Grey Hair Treatment">Grey Hair Treatment</option>
+        <option value="Skin Treatments">Skin Treatments</option>
+        <option value="Scalp Detox">Scalp Detox</option>
+      </select>
+
+      <button type="submit">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+          <path d="M16 0c-8.837 0-16 7.163-16 16 0 2.803.729 5.576 2.114 8.007l-2.178 7.973 8.145-2.141c2.33 1.27 4.957 1.94 7.919 1.94 8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 29.333c-2.506 0-4.907-.678-7.032-1.958l-.503-.297-4.84 1.273 1.291-4.727-.32-.541c-1.287-2.183-1.964-4.665-1.964-7.083 0-7.346 5.974-13.333 13.333-13.333s13.333 5.987 13.333 13.333c0 7.36-5.987 13.333-13.333 13.333zM22.421 19.682c-.369-.185-2.177-1.075-2.515-1.196s-.582-.185-.825.185-.947 1.196-1.162 1.438-.428.277-.797.092c-.369-.185-1.562-.577-2.975-1.838-1.1-.981-1.84-2.193-2.055-2.562s-.023-.574.162-.759c.165-.164.369-.428.554-.642.185-.214.246-.369.369-.615.123-.246.061-.462-.031-.642s-.825-2.003-1.132-2.755c-.297-.715-.598-.618-.825-.628l-.703-.012c-.246 0-.646.092-.984.462s-1.294 1.263-1.294 3.08 1.325 3.577 1.51 3.821c.185.246 2.605 3.975 6.317 5.572.883.381 1.57.609 2.105.78.884.28 1.687.24 2.323.146.708-.106 2.177-.889 2.485-1.748.308-.859.308-1.597.215-1.748-.092-.15-.338-.246-.708-.431z"/>
+        </svg>
+        Book on WhatsApp
+      </button>
+    </form>
+  </div>
+
+  <!-- ✅ Link external JavaScript -->
+  <script src="consultation.js"></script>
+
+</body>
+</html>

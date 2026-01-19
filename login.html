@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Majestic Herbs Login & Signup</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="container">
+    <h2 id="formTitle">Login to Majestic Herbs</h2>
+
+    <div id="loginForm">
+      <input type="text" id="loginEmail" placeholder="Email" required>
+      <input type="password" id="loginPassword" placeholder="Password" required>
+      <button onclick="login()">Login</button>
+      <div class="toggle" onclick="showSignup()">Don’t have an account? Sign Up</div>
+      <div class="message" id="loginMessage"></div>
+    </div>
+
+    <div id="signupForm" style="display:none;">
+      <input type="text" id="signupName" placeholder="Full Name" required>
+      <input type="email" id="signupEmail" placeholder="Email" required>
+      <input type="password" id="signupPassword" placeholder="Password" required>
+      <button onclick="signup()">Sign Up</button>
+      <div class="toggle" onclick="showLogin()">Already have an account? Login</div>
+      <div class="message" id="signupMessage"></div>
+    </div>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>

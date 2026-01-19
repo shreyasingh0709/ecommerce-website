@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout - M Herbs</title>
+
+  <!-- ✅ Link to external CSS -->
+  <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+  <h1>Checkout - M Herbs</h1>
+
+  <div id="total"></div>
+
+  <div class="card" id="paySection">
+    <h3>Scan and Pay</h3>
+    <p id="merchantName"></p>
+    <img src="qr.png" alt="QR Code" class="qr" /><br>
+    <p id="upiId"></p>
+    <p class="note" id="note"></p>
+  </div>
+
+  <div class="card">
+    <h3>Submit Payment Confirmation</h3>
+    <form id="confirmForm" enctype="multipart/form-data">
+      <input name="name" placeholder="Your Name" required><br>
+      <input name="amount" type="number" placeholder="Amount Paid (₹)" required><br>
+      <input name="upi_id" placeholder="Your UPI ID (optional)"><br>
+      <input name="txn_id" placeholder="Transaction / Reference ID" required><br>
+      <label>Upload Screenshot:</label>
+      <input name="receipt" type="file" accept="image/*"><br>
+      <button type="submit">Submit Confirmation</button>
+    </form>
+    <div id="msg"></div>
+  </div>
+
+  <!-- ✅ Link to external JavaScript -->
+  <script src="checkout.js"></script>
+</body>
+</html>
